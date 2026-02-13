@@ -210,7 +210,7 @@ animation:boom 1s linear infinite;
 </style>
 </head>
 
-<body>
+<body onclick="startLove()">
 
 <div class="hearts" id="hearts"></div>
 
@@ -305,12 +305,11 @@ if(n==3) firework();
 }
 
 /* music */
-let playing=true;
-function playMusic(){
+
+function startLove(){
 let m=document.getElementById("m");
-if(playing){m.pause();}
-else{m.play();}
-playing=!playing;
+m.play();   
+document.body.onclick=null;
 }
 
 /* fireworks */

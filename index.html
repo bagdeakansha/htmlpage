@@ -17,7 +17,7 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-overflow:hidden;
+overflow:auto;
 color:white;
 }
 
@@ -220,16 +220,15 @@ animation:boom 1s linear infinite;
 <div class="screen active" id="s1">
 <!-- <h1>Helloo babyyyy!!</h1> -->
 <!-- <p id="">Someone special is reading this… yes YOU ❤️</p> -->
-<p id="typing">Wait… I have something special for you ❤️</p>
+<p id="typing">I have something special 
+for you ❤️</p>
 <br>
 <button class="btn" onclick="next(1)">Tap for a surprise🖤</button>
 </div>
 
 <!-- screen 2 -->
 <div class="screen" id="s2">
-<p>
-Sometimes you feel like you are not important to me…<br>
-but the truth is, I value you more than you can imagine ❤️<br><br>
+<p>I value you more than you can imagine ❤️<br>
 
 I never share myself with anyone,<br>
 but with you it feels different… special.<br>
@@ -324,6 +323,8 @@ document.body.appendChild(f);
 setTimeout(()=>f.remove(),900);
 }
 }
+
+
 </script>
 
 </body>
